@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+@import './reset';
+@import './gen.less';
+
+.bothEnd {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix {
+  &::after {
+    display: block;
+    height: 0;
+    clear: both;
+    font-size: 0;
+    content: ' ';
+    visibility: hidden;
+  }
+}

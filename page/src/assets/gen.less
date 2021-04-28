@@ -1,0 +1,68 @@
+@base-size: 5px;
+
+.loop(@counter) when (@counter >= 0) {
+  @size: @base-size * @counter;
+  .p-@{counter} {
+    padding: (@size);
+  }
+
+  .px-@{counter} {
+    padding: 0 (@size);
+  }
+
+  .py-@{counter} {
+    padding: (@size) 0;
+  }
+
+  .pt-@{counter} {
+    padding-top: (@size);
+  }
+
+  .pr-@{counter} {
+    padding-right: (@size);
+  }
+
+  .pb-@{counter} {
+    padding-bottom: (@size);
+  }
+
+  .pl-@{counter} {
+    padding-left: (@size);
+  }
+
+  .m-@{counter} {
+    margin: (@size);
+  }
+
+  .mx-@{counter} {
+    margin: 0 (@size);
+  }
+
+  .my-@{counter} {
+    margin: (@size) 0;
+  }
+
+  .mt-@{counter} {
+    margin-top: (@size);
+  }
+
+  .mr-@{counter} {
+    margin-right: (@size);
+  }
+
+  .mb-@{counter} {
+    margin-bottom: (@size);
+  }
+
+  .ml-@{counter} {
+    margin-left: (@size);
+  }
+
+  .loop((@counter - 1)); // 递归调用自身
+}
+
+.loop(10);
+
+.pb-16 {
+  padding: 16px;
+}

@@ -1,0 +1,9 @@
+/dist/*
+/public/config
+/public/index.html
+/public/*.json
+.output.js
+
+**/*.md
+**/*.svg
+**/*.sh

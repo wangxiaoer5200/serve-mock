@@ -1,0 +1,49 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "mock-server",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "serve": "nodemon --inspect --watch 'src/**/*' -e ts,tsx --exec node -r ts-node/register ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wangxiaoer",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.8.23",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-helmet": "^5.2.0",
+    "koa-json": "^2.0.2",
+    "koa-log4": "^2.3.2",
+    "koa-logger": "^3.2.1",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "mockjs": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.3.8",
+    "@types/joi": "^14.3.4",
+    "@types/koa2-cors": "^2.0.1",
+    "@types/koa": "^2.11.3",
+    "@types/koa-router": "^7.4.0",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-helmet": "^3.1.2",
+    "@types/koa-json": "^2.0.18",
+    "@types/koa-log4": "^2.3.1",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-static": "^4.0.1",
+    "@types/mockjs": "^1.0.2",
+    "prettier": "^2.0.2",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3",
+    "jest": "^25.2.4",
+    "ts-jest": "^25.2.1"
+  }
+}
